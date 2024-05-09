@@ -38,8 +38,8 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 backend --count --show-source --statistics
+          flake8 . --count --show-source --statistics
 
       - name: Lint with yamllint
         run: |
-          yamllint -c .yamllint.yml .github/workflows/build-backend.yml
+          yamllint -c .yamllint.yml .
