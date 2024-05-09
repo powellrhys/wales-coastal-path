@@ -3,6 +3,11 @@ import folium
 
 
 def generate_heatmap(activity_data: list, frontend_filename: str):
+    '''
+    Input: Activity data and output filename
+    Output: HTML file containing the folium plot
+    Function to generate heatmap of recorded activities
+    '''
 
     # Generate folium map object
     m = folium.Map(tiles='cartodb positron',
